@@ -176,15 +176,19 @@
 
 
     <button onclick="confirmar()">Confirmar asistencia 📩</button>
-  </div>
 
-  <script>
-    function confirmar() {
-      alert('¡Gracias! Tu asistencia ha sido confirmada 😊');
-    }
-  </script>
+<script>
+  function confirmar() {
+    // Primero muestra el mensaje en pantalla
+    alert('¡Gracias! Tu asistencia ha sido confirmada 😊');
+
+    // Después abre WhatsApp con tu número y mensaje
+    window.open("https://wa.me/5491156941250?text=Hola%21%20Confirmo%20mi%20asistencia.", "_blank");
+  }
+</script>
 </body>
 </html>
+
 
 
 
