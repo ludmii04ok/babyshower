@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Lobster&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Style+Script&display=swap" rel="stylesheet">
+  
+  
+  <title>Baby Shower de Ana</title>
+  <style>
+    /* Body con imagen de fondo y centrado */
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url('fondo.jpg'); /* Imagen de fondo */
+      background-size: cover;       /* La imagen cubre toda la pantalla */
+      background-position: center;  /* Centrada */
+      background-repeat: no-repeat; /* No se repite */
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    /* Contenedor de la invitación */
+    .container {
+      width: 90%;
+      max-width: 350px;
+      max-height: 90vh; /* No excede altura de pantalla */
+      padding: 20px;
+      border-radius: 20px;
+      text-align: center;
+      overflow: auto; /* scroll solo si es necesario */
+      box-sizing: border-box;
+    }
+
+    /* Título */
+    .baby {
+      font-family: "Lobster", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 60px;
+      margin-bottom: 0px;
+      margin-left: 115px;
+      color: #e45887;
+      text-shadow: 2px 2px 4px #d79cb4;
+    }
+    .shower {
+      font-family: "Lobster", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      margin-top: 0px;
+
+      font-size: 60px;
+      margin-bottom: 10px;
+      margin-left: 115px;
+      color: #e45887;
+      text-shadow: 2px 2px 4px #d79cb4;
+    }
+
+   h2 {
+ 
+     font-family: "Style Script", cursive;
+     
+
+      font-weight: 400;
+      font-style: normal;
+      font-size: 70px;
+      margin-top: 2px;
+      margin-bottom: 0px;
+      color: #e45887;
+      text-shadow: 2px 2px 4px #9f5774;
+    }
+
+
+    /* Texto */
+    .dia {
+
+      font-family: "Merriweather", serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-size: 20px;
+      margin-top: 0;
+      margin-top: 1px;    /* espacio arriba del párrafo */
+      margin-bottom: 10px;
+      color: #e45887;
+      text-shadow: 2px 2px 4px #d79cb4;
+    
+    }
+    .mes {
+
+     font-family: "Merriweather", serif;
+     font-optical-sizing: auto;
+     font-weight: 700;
+    
+     font-style: normal;
+     margin-top: 0;
+     margin-top: 1px;    /* espacio arriba del párrafo */
+     margin-bottom: 10px;
+     font-size: 22px;
+     color: #e45887;
+     text-shadow: 2px 2px 4px #d79cb4;
+
+    }
+    .horario {
+
+      font-family: "Merriweather", serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-size: 15px;
+      margin-top: 0;
+      margin-top: 1px;    /* espacio arriba del párrafo */
+      margin-bottom: 10px;
+      color: #e45887;
+      text-shadow: 2px 2px 4px #d79cb4;
+    }
+
+    .ubicacion {
+     font-family: "Merriweather", serif;
+     font-optical-sizing: auto;
+     font-weight: 400;
+    
+     font-size: 15px;
+     margin-top: 0;
+     margin-top: 1px;    /* espacio arriba del párrafo */
+     margin-bottom: 10px;
+     color: #e45887;
+     text-shadow: 2px 2px 4px #d79cb4;
+    }
+
+
+    /* Botón */
+    button {
+      background-color: #f379ba;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ff69b4;
+      transform: scale(1.05);
+    }
+
+    /* Ajustes para pantallas muy pequeñas */
+    @media (max-height: 600px) {
+      h1 { font-size: 18px; }
+      p { font-size: 14px; }
+      button { font-size: 14px; padding: 10px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+    <h1 class="baby">Baby</h1>
+    <h1 class="shower">Shower</h1>
+
+    <h2>Cloe</h2>
+    <p class="dia">SÁBADO</p>
+    <p class="mes">SEPTIEMBRE | 20 | 2025</p>
+    <p class="horario">A las 00:00 PM</p>
+
+    <p class="ubicacion">📍ubicacion</p>
+
+
+
+    <button onclick="confirmar()">Confirmar asistencia 📩</button>
+  </div>
+
+  <script>
+    function confirmar() {
+      alert('¡Gracias! Tu asistencia ha sido confirmada 😊');
+    }
+  </script>
+</body>
+</html>
